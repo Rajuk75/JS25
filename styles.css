@@ -1,0 +1,64 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Heading Styles */
+h2, h3 {
+    color: #333;
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styling */
+.btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* To-Do List Container */
+#listContainer {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* To-Do Item Styling */
+#listContainer p {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 5px auto;
+    width: 60%;
+    max-width: 400px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#listContainer p:hover {
+    background-color: #ffcccc;
+    text-decoration: line-through;
+}

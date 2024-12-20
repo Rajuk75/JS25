@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <h2>Enter Text Below:</h2>
+    <input type="text" id="mainText">
+    <button class="btn">Add to list</button>
+    <!-- Uncomment this line if you want to use it -->
+    <!-- <p id="raj"></p> -->
+     <h3>Your To Do List</h3>
+    <div id="listContainer"></div>
+    
+    <script>
+        let inputElem = document.getElementById("mainText");
+        let clickBtn = document.querySelector(".btn");
+        let listContainer = document.getElementById("listContainer");
+
+        //console.log(inputElem);
+        //console.log(clickBtn);
+
+        const ToDo = () => {
+            //console.log(inputElem.value);
+            
+            // Create a new <p> element
+            let pElem = document.createElement("p");
+            pElem.textContent = inputElem.value;
+            //console.log(pElem);
+
+            // Append the <p> element to the listContainer
+            listContainer.appendChild(pElem);
+
+            // Add a click event listener to the new <p> element to remove it when clicked
+            pElem.addEventListener("click", (event) => {
+                event.target.remove();
+            });
+    
+
+            // Clear the input field after adding the text
+            inputElem.value = "";
+        };
+
+        // Add an event listener to log the input value when the button is clicked
+        clickBtn.addEventListener("click", function() {
+            ToDo();
+        });
+
+
+        
+
+    </script>
+
+</body>
+</html>
